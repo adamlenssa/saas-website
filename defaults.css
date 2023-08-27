@@ -1,0 +1,69 @@
+:root {
+   --blue: #2476fe;
+   --black: #000000;
+   --gray: #677787;
+   --indigo: #20335b;
+   --darkgray: #5f6267;
+   --lightgray: #f9fafe;
+   --bggrey: #f5f5f5;
+   --bgblue: #e0e7ef;
+   --10px: 0.625rem;
+   --12px: 0.8rem;
+   --14px: 0.9rem;
+   --16px: 1rem;
+   --18px: 1.1rem;
+   --20px: 1.3rem;
+   --24px: 1.5rem;
+   --25px: 1.6rem;
+   --28px: 1.8rem;
+   --30px: 1.875rem;
+   --32px: 2rem;
+   --40px: 2.5rem;
+   --50px: 3.125rem;
+   --60px: 3.75rem;
+   --70px: 4.375rem;
+   --80px: 5rem;
+   --90px: 5.625rem;
+   --100px: 6.25rem;
+   --150px: 9.375rem;
+}
+
+*, ::before, ::after {
+   margin: 0px;
+   padding: 0px;
+}
+
+img {
+   width: 100%;
+   height: 100%;
+   max-width: 100%;
+   box-sizing: border-box;
+}
+
+i {
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper {
+   margin: var(--20px);
+}
+
+.main-button {
+   background-color: var(--blue);
+   padding: var(--16px) var(--25px);
+   border-radius: 30px;
+}
+
+.container {
+   max-width: 1024px;
+   margin: 0px auto;
+}
+
+a {
+   text-decoration: none;
+   color: white;
+}
+
+* {
+   font-family: 'Lato', sans-serif;
+}
