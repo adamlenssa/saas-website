@@ -7,8 +7,8 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="defaults.css">
-      <link rel="stylesheet" href="responsive.css">
       <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="responsive.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -17,24 +17,23 @@
    <body>
       <div class="wrapper">
          <header>
-            <div class="bg">
-               <div class="bggray"></div>
-               <div class="bgblue"></div>
-               <div class="bgwite"></div>
-            </div>
-            <div class="top">
+            <div class="top" id="top">
                <div class="logo">
                   <img src="./saas-project-assets/project_logo/logo.svg" alt="Front Logo">
                </div>
                <nav>
-                  <ul>
+                  <button aria-expanded="false" aria-controls="navbarDropdown">
+                     <span class="open">&#x2630;</span>
+                     <span class="close">&times;</span>
+                   </button>
+                  <ul class="ul" id="ul">
                      <li>Home</li>
                      <li>Features</li>
                      <li>Learn</li>
                      <li>Pricing</li>
                      <li>Hire Us</li>
+                     <a href="https://www.twitch.tv/videos/1739154372" class="button-blue" target="_blank">Buy Now</a>
                   </ul>
-                  <div class="button-blue">Buy Now</div>
                </nav>
             </div>
             <div class="message container">
@@ -128,7 +127,7 @@
             <section class="sfp" id="spf">
                <div class="spfdiv">
                   <div class="sfpmessage">
-                     <h2> Font Makes you look at things <br> from a different prospective</h2>
+                     <h2> Font Makes you look at things  from a different prospective</h2>
                      <a href="https://www.twitch.tv/videos/1739154372" class="main-button play-video" target="_blank"><i class="fa-solid fa-circle-play"></i> Play Video </a>
                   </div>
                   <div class="spfimg">
@@ -190,12 +189,14 @@
             </section>
             <section class="about">
                <div class="hubspot">
-                  <div class="women3">
-                     <div class="lady3">
-                        <img src="./saas-project-assets/people/woman_three.jpg" alt="">
-                     </div>
-                     <div class="dots">
-                        <img src="./saas-project-assets/abstract/dots.svg" alt="">
+                  <div>
+                     <div class="women3">
+                        <div class="lady3">
+                           <img src="./saas-project-assets/people/woman_three.jpg" alt="">
+                        </div>
+                        <div class="dots">
+                           <img src="./saas-project-assets/abstract/dots.svg" alt="">
+                        </div>
                      </div>
                   </div>
                   <div class="hubspottext">
@@ -241,7 +242,7 @@
                   <div class="pricing-big-card">
                      <p><span>59 </span>/ mo</p>
                      <hr>
-                     <p>Start your Front business now. 100% <br> guaranteed money back. No <br> questions asked.</p>
+                     <p>Start your Front business now. 100% guaranteed money back. No questions asked.</p>
                      <div class="spacer">
                         <a href="https://www.twitch.tv/videos/1739154372" class="main-button play-video" target="_blank"><i class="fa-solid fa-circle-play"></i> Play Video </a>
                      </div>
@@ -284,9 +285,9 @@
                         <h2> Hire Us</h2>
                         <p>Whatever your goal - <br> we will get you there</p>
                         <hr>
+                        <p>"I love front! I love the ease of use, I love the <br> fact that I have total creative freedom..."</p>
                      </div>
                      <div class="bottom">
-                        <p>"I love front! I love the ease of use, I love the <br> fact that I have total creative freedom..."</p>
                         <div class="nameandpostion">
                            <h3>Charlotte Moore</h3>
                            <p>Head of Commercials, Slack</p>
@@ -600,7 +601,86 @@
                   </div>
                </div>
             </section>
+            <footer>
+               <div class="footer-top">
+                  <div class="footer-grid">
+                     <div class="column">
+                        <div class="footer-logo">
+                           <img src="./saas-project-assets/project_logo/logo.svg" alt="">
+                        </div>
+                        <p><span class="footer-icon"><i class="fa-solid fa-location-arrow"></i></span> 12345 Sligo Rd., Silver Spring, MD</p>
+                        <p id="blue"><span class="footer-icon"><i class="fa-solid fa-phone"></i></span> +1 (240) 123-4567</p>
+                     </div>
+                     <div class="column">
+                        <h3>Company</h3>
+                        <p>About</p>
+                        <p>Career <span class="blue-icon">We're Hiring</span></p>
+                        <p>Blog</p>
+                        <p>Customers</p>
+                        <p>Hire Us</p>
+                     </div>
+                     <div class="column">
+                        <h3>Features</h3>
+                        <p>Press</p>
+                        <p id="blue">Release Notes</p>
+                        <p>Integrations</p>
+                        <p>Pricing</p>
+                     </div>
+                     <div class="column">
+                        <h3>Documentation</h3>
+                        <p>Support</p>
+                        <p>Docs</p>
+                        <p>Status</p>
+                        <p>API Reference</p>
+                        <p>Tech Requirements</p>
+                     </div>
+                     <div class="column">
+                        <h3>Resources</h3>
+                        <p><span class="footer-icon"><i class="fa-solid fa-circle-info"></i></span> Help</p>
+                        <p><span class="footer-icon"><i class="fa-solid fa-circle-user"></i></span> Your Account</p>
+                     </div>
+                  </div>
+               </div>
+               <hr>
+               <div class="footer-bottom">
+                  <div class="bottom-top">
+                     <p>Privacy Policy > <span>Terms</span> > Site Map</p>
+                     <div class="footer-bottom-icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-google"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <span class="usa"><i class="fa-solid fa-flag-usa"></i> United States <i class="fa-solid fa-angle-down"></i></span>
+                     </div>
+                  </div>
+                  <div class="bottom-bottom">
+                     <p>&copy;Front. 2022 Responsive Designs. All Rights reserved.</p>
+                     <p>When you visit or interact with our sites, services or tools, we or ous authorized service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes. </p>
+                  </div>
+               </div>
+            </footer>
          </div>
       </div>
+      <script>
+         const nav = document.getElementById("top");
+         window.onscroll = function () {
+         if (window.pageYOffset > 200) {
+            nav.classList.add("sticky");
+         } else {
+            nav.classList.remove("sticky");
+         }
+         };
+
+
+
+         const navButton = document.querySelector("button[aria-expanded]");
+
+         function toggleNav({ target }) {
+         const expanded = target.getAttribute("aria-expanded") === "true" || false;
+         navButton.setAttribute("aria-expanded", !expanded);
+         }
+
+         navButton.addEventListener("click", toggleNav);
+      </script>
    </body>
 </html>

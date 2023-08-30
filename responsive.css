@@ -1,0 +1,155 @@
+@media screen and (max-width: 768px) {
+   [aria-controls="navbarDropdown"] {
+       display: block;
+      }
+   [aria-expanded="false"] ~ .ul {
+      display: none;
+   }
+   [aria-expanded="false"] .close {
+      display: none;
+   }
+   [aria-expanded="true"] ~ .ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: var(--60px);
+      font-size: var(--12px);
+      width: 100%;
+      background-color: var(--bggrey);
+    }
+   [aria-expanded="true"] .open {
+      display: none;
+   }
+  
+   nav button {
+      font-size: var(--20px);
+      border: none;
+      background-color: transparent;
+   }
+
+   nav button span { pointer-events: none; }
+   .ul li { 
+      flex-basis: 20%; 
+      text-align: center; 
+   }
+   .ul a { 
+      padding: var(--10px) var(--12px);
+      margin-top: var(--12px);
+      margin-bottom: var(--12px);
+      width: fit-content;
+      align-self: center;
+   }
+
+   body { width: 100%; }
+   .wrapper { margin: 0px; padding: 5px; }
+   .container {width: 100%;}
+   .message {
+   flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+   }
+   .maintext { 
+      text-align: center;
+      margin-top: var(--20px); 
+   }
+   .message .gird { margin-top: 50px; }
+   .key-benefits .benefits-grid {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+   }
+   .sfp .spfdiv { justify-content: center; }
+   .spfdiv .sfpmessage {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: var(--20px);
+   }
+   .spfimg {
+      width: 100%;
+      max-width: 750px;
+   }
+   .lines::after, .lines::before, .a::after, .b::before { width: 40px; }
+   .circletext p { font-size: .85rem; }
+   .video { padding: var(--50px); }
+   .women3 {max-width: 100%;}
+   .hubspot {
+      flex-direction: column;
+      align-content: center;
+   }
+   .hubpostlogo { margin: auto; }
+   .hubspottext { 
+      text-align: center; 
+      margin-top: var(--50px);
+   }
+   .trustedgrid {
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+   }
+   .trustedgrid .logos { width: var(--100px); }
+   .pricing .pricing-table { grid-template-columns: repeat(2, 1fr); }
+   .pricing-big-card { 
+      grid-column: 1 / -1;
+      text-align: center;
+      max-width: 100%;
+   }
+   .hire-us-text {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+   }
+   .hire-us-form { width: 100%; }
+   form input[type=text] { width: 44%; }
+   .footer-grid { grid-template-columns: 50% repeat(2, 1fr); }
+   .column:first-child { grid-row: 1 / 3; }
+}
+
+@media screen and (max-width:425px) {
+   .wrapper { width: 100%;}
+   .body { width: 100%; }
+   [aria-expanded="true"] ~ .ul { flex-direction: column; }
+   .gird { width: 100%; max-width: 360px; }
+   .lines::before, .lines::after, .a::after, .b::before { display: none; }
+   .thecircles {  flex-direction: column; }
+   .circletext { 
+      flex-direction: row; 
+      justify-items: center;
+      margin-bottom: var(--12px);
+   }
+   .circletext p { 
+      padding-top: 0px;
+      padding-left: var(--12px);
+   }
+   .video { padding: var(--10px); }
+   .trustedgrid { grid-template-columns: repeat(1, 1fr); }
+   .trustedgrid .logos { justify-self: center; }
+   .pricing .pricing-table { grid-template-columns: repeat(1, 1fr); }
+   .pricing-small-card { width: 100%; }
+   .hire-us { width: 100%; }
+   .hire-us-text { text-align: center; }
+   .hire-us-text .bottom { width: 100%; }
+   .hire-us-pictures { justify-content: center; }
+   form .line { padding-bottom: 0px; }
+   form input[type=text], form select { 
+      width: 100%;
+      margin-bottom: var(--20px);
+    }
+    .privacy { margin-bottom: var(--20px); }
+    .footer-grid { 
+      grid-template-columns: repeat(1, 1fr); 
+      text-align: center;
+   }
+   .footer-logo { margin: auto; }
+   .bottom-top { 
+      flex-direction: column; 
+      text-align: center;
+   }
+   .footer-bottom-icons { margin-top: var(--20px) }
+   .bottom-top p { margin-right: 0; }
+   .bottom-top .usa { 
+      display: block;
+      width: fit-content;
+      margin: auto;
+      margin-top: var(--12px);
+   }
+
+}
