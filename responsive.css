@@ -46,10 +46,46 @@
    body { width: 100%; }
    .wrapper { margin: 0px; padding: 5px; }
    .container {width: 100%;}
+   .bg {
+      height: 600px;
+      width: 100%;
+      overflow: hidden;
+      z-index: -1;
+      position: absolute;
+      top: 0px;
+   }
+
+   .bggray {
+      height: 1323px;
+      rotate: 98deg;
+      left: -833px;
+      top: -506px;
+      z-index: 4;
+      width: 200%;
+   }
+
+   .bgblue {
+      background-color: var(--bgblue);
+      width: 1400px;
+      height: 1400px;
+      position: relative;
+      z-index: 3;
+      right: -114px;
+   }
+
+   .bgwhite { 
+      position: absolute;
+      top: 311px;
+      height: 100%;
+      width: 2200px;
+      z-index: 5;
+      rotate: 350deg;
+   }
+
    .message {
-   flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
    }
    .maintext { 
       text-align: center;

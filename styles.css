@@ -1,12 +1,10 @@
-header .bg {
-   height: 37.5rem;
+.bg {
+   height: 600px;
    width: 100%;
-   position: absolute;
    overflow: hidden;
-   z-index: -1;
-   opacity: 36%;
+   position: absolute;
+   z-index: -100;
    top: 0px;
-   left: 0px;
 }
 
 [aria-controls="navbarDropdown"] { display: none; }
@@ -15,27 +13,27 @@ header .bg {
    background-color: var(--bgblue);
    height: 87.5rem;
    position: relative;
-   z-index: 1;
+   z-index: -1;
    right: -7.125rem;
 }
 
 .bggray {
    background-color: var(--bggrey);
-   width: 123rem;
-   height: 82.688rem;
-   rotate: 114deg;
-   z-index: 2;
-   position: absolute;
-   left: -32.5rem;
-   top: -31.625rem;
+    width: 130%;
+    height: 1323px;
+    rotate: 114deg;
+    z-index: -1;
+    position: absolute;
+    left: -620px;
+    top: -506px;
 }
 
-.bgwite {
+.bgwhite {
    position: absolute;
-   top: 27.625rem;
+   top: 442px;
    height: 100%;
-   width: 110%;
-   z-index: 3;
+   width: 2200px;
+   z-index: 0;
    background-color: white;
    rotate: 357deg;
 }
@@ -307,7 +305,7 @@ nav ul li {
 .lines::before {
    display: inline-block;
    content: "";
-   width: 5.5rem;
+   width: 4rem;
    height: 0.125rem;
    background-color: #ecf2ff;
 }
@@ -315,7 +313,7 @@ nav ul li {
 .lines::after {
    display: inline-block;
    content: "";
-   width: 5.5rem;
+   width: 4rem;
    height: 0.125rem;
    background-color: #ecf2ff;
 }
@@ -323,7 +321,7 @@ nav ul li {
 .b::before {
    display: inline-block;
    content: "";
-   width: 5.5rem;
+   width: 4rem;
    height: 0.125rem;
    background-color: transparent;
 }
@@ -331,7 +329,7 @@ nav ul li {
 .a::after {
    display: inline-block;
    content: "";
-   width: 5.5rem;
+   width: 4rem;
    height: 0.125rem;
    background-color: transparent;
 }
